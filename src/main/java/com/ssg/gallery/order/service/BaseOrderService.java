@@ -1,7 +1,7 @@
 package com.ssg.gallery.order.service;
 
 import com.ssg.gallery.cart.service.CartService;
-import com.ssg.gallery.common.util.EncryptionUtils;
+//import com.ssg.gallery.common.util.EncryptionUtils;
 import com.ssg.gallery.item.dto.ItemRead;
 import com.ssg.gallery.item.service.ItemService;
 import com.ssg.gallery.order.dto.OrderRead;
@@ -70,17 +70,17 @@ public class BaseOrderService implements OrderService {
         List<ItemRead> items = itemService.findAll(orderReq.getItemIds());
         long amount = 0L;
 
-        for (ItemRead item : items) {
-            amount += item.getPrice() - item.getPrice().longValue() * item.getDiscountPer() / 100;
-        }
+//        for (ItemRead item : items) {
+//            amount += item.getPrice() - item.getPrice().longValue() * item.getDiscountPer() / 100;
+//        }
 
         // 주문 요청에 최종 결제 금액 입력
         orderReq.setAmount(amount);
 
         // 결제 수단이 카드일 때 카드 번호 암호화
-        if ("card".equals(orderReq.getPayment())) {
-            orderReq.setCardNumber(EncryptionUtils.encrypt(orderReq.getCardNumber()));
-        }
+//        if ("card".equals(orderReq.getPayment())) {
+//            orderReq.setCardNumber(EncryptionUtils.encrypt(orderReq.getCardNumber()));
+//        }
 
         // 주문 저장
         Order order = orderRepository.save(orderReq.toEntity(memberId));
