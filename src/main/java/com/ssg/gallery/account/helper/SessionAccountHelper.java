@@ -32,7 +32,7 @@ public class SessionAccountHelper implements AccountHelper {
            if (member == null) {
                return null;
            }
-         HttpUtils.setSession(request, AccountConstants.Member_ID_Name, member);
+         HttpUtils.setSession(request, AccountConstants.Member_ID_Name, member.getId());
            return member.getLoginId();
     }
 
@@ -42,7 +42,7 @@ public class SessionAccountHelper implements AccountHelper {
     public Integer getMemberId(HttpServletRequest request) {
        Object memberId = HttpUtils.getSessionValue(request, AccountConstants.Member_ID_Name);
        if (memberId != null) {
-            return  (int)memberId;
+            return  (int) memberId;
        }
        return null;
     }
