@@ -8437,3 +8437,758 @@ Unconditional classes:
 2025-05-23T15:32:25.088+09:00  INFO 11324 --- [gallery] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-05-23T15:32:25.090+09:00  INFO 11324 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-05-23T15:32:25.097+09:00  INFO 11324 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T15:32:28.465+09:00  INFO 2268 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Starting GalleryApplication using Java 17.0.14 with PID 2268 (C:\study\gallery\gallery\build\classes\java\main started by a in C:\study\gallery\gallery)
+2025-05-23T15:32:28.468+09:00 DEBUG 2268 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-05-23T15:32:28.469+09:00  INFO 2268 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T15:32:29.321+09:00  INFO 2268 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T15:32:29.428+09:00  INFO 2268 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 5 JPA repository interfaces.
+2025-05-23T15:32:30.247+09:00  INFO 2268 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-23T15:32:30.273+09:00  INFO 2268 --- [gallery] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T15:32:30.274+09:00  INFO 2268 --- [gallery] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-23T15:32:30.377+09:00  INFO 2268 --- [gallery] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T15:32:30.377+09:00  INFO 2268 --- [gallery] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1853 ms
+2025-05-23T15:32:30.581+09:00  INFO 2268 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T15:32:30.749+09:00  INFO 2268 --- [gallery] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@738a5848
+2025-05-23T15:32:30.752+09:00  INFO 2268 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T15:32:30.805+09:00  INFO 2268 --- [gallery] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T15:32:30.887+09:00  INFO 2268 --- [gallery] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-23T15:32:30.934+09:00  INFO 2268 --- [gallery] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T15:32:31.402+09:00  INFO 2268 --- [gallery] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T15:32:31.541+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@147c00aa) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c90029b)
+2025-05-23T15:32:31.542+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4db728df) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@b0d3e7)
+2025-05-23T15:32:31.542+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@74bdfa0b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@68a5aadd)
+2025-05-23T15:32:31.542+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1c2096c6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1a89414e)
+2025-05-23T15:32:31.542+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@17f8db6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@44492c06)
+2025-05-23T15:32:31.542+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5c4714ef) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@c94bd18)
+2025-05-23T15:32:31.543+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@71fb8301) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7cdfa824)
+2025-05-23T15:32:31.543+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18db3b3c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@318e3942)
+2025-05-23T15:32:31.543+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c4057f9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1ddf42dd)
+2025-05-23T15:32:31.545+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-05-23T15:32:31.545+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-05-23T15:32:31.546+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-05-23T15:32:31.550+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T15:32:31.550+09:00 DEBUG 2268 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T15:32:32.782+09:00  INFO 2268 --- [gallery] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T15:32:32.788+09:00  INFO 2268 --- [gallery] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T15:32:33.330+09:00  WARN 2268 --- [gallery] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T15:32:33.776+09:00  INFO 2268 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-23T15:32:33.786+09:00  INFO 2268 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Started GalleryApplication in 5.974 seconds (process running for 6.978)
+2025-05-23T15:33:35.389+09:00  INFO 2268 --- [gallery] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T15:33:35.390+09:00  INFO 2268 --- [gallery] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T15:33:35.391+09:00  INFO 2268 --- [gallery] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-23T15:33:47.547+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T15:34:01.753+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        m1_0.id,
+        m1_0.created,
+        m1_0.login_id,
+        m1_0.login_pw,
+        m1_0.name 
+    from
+        members m1_0 
+    where
+        m1_0.login_id=? 
+        and m1_0.login_pw=?
+2025-05-23T15:34:01.783+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T15:34:41.060+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.created,
+        c1_0.item_id,
+        c1_0.member_id 
+    from
+        carts c1_0 
+    where
+        c1_0.member_id=? 
+        and c1_0.item_id=?
+2025-05-23T15:34:41.094+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    insert 
+    into
+        carts
+        (created, item_id, member_id) 
+    values
+        (?, ?, ?)
+2025-05-23T15:34:43.058+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.created,
+        c1_0.item_id,
+        c1_0.member_id 
+    from
+        carts c1_0 
+    where
+        c1_0.member_id=?
+2025-05-23T15:34:43.069+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0 
+    where
+        i1_0.id in (?)
+2025-05-23T15:34:49.266+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.created,
+        c1_0.item_id,
+        c1_0.member_id 
+    from
+        carts c1_0 
+    where
+        c1_0.member_id=?
+2025-05-23T15:34:49.272+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0 
+    where
+        i1_0.id in (?)
+2025-05-23T15:34:57.804+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0 
+    where
+        i1_0.id in (?)
+2025-05-23T15:34:57.807+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    insert 
+    into
+        orders
+        (address, amount, card_number, created, member_id, name, payment) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2025-05-23T15:34:57.813+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_items
+        (created, item_id, order_id) 
+    values
+        (?, ?, ?)
+2025-05-23T15:34:57.820+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.created,
+        c1_0.item_id,
+        c1_0.member_id 
+    from
+        carts c1_0 
+    where
+        c1_0.member_id=?
+2025-05-23T15:34:57.834+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    delete 
+    from
+        carts 
+    where
+        id=?
+2025-05-23T15:34:59.024+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T15:35:02.128+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.created,
+        c1_0.item_id,
+        c1_0.member_id 
+    from
+        carts c1_0 
+    where
+        c1_0.member_id=?
+2025-05-23T15:35:02.132+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0 
+    where
+        i1_0.id in (?)
+2025-05-23T15:54:18.748+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.created,
+        c1_0.item_id,
+        c1_0.member_id 
+    from
+        carts c1_0 
+    where
+        c1_0.member_id=?
+2025-05-23T15:54:18.759+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0 
+    where
+        i1_0.id in (?)
+2025-05-23T15:57:09.567+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T15:59:25.082+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:01:19.662+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:02:25.169+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:02:32.137+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:02:32.157+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:02:38.618+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:02:38.638+09:00 DEBUG 2268 --- [gallery] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:03:05.989+09:00  INFO 2268 --- [gallery] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T16:03:05.991+09:00  INFO 2268 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T16:03:05.997+09:00  INFO 2268 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T16:03:09.500+09:00  INFO 12140 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Starting GalleryApplication using Java 17.0.14 with PID 12140 (C:\study\gallery\gallery\build\classes\java\main started by a in C:\study\gallery\gallery)
+2025-05-23T16:03:09.503+09:00 DEBUG 12140 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-05-23T16:03:09.503+09:00  INFO 12140 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T16:03:10.318+09:00  INFO 12140 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T16:03:10.409+09:00  INFO 12140 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 5 JPA repository interfaces.
+2025-05-23T16:03:10.971+09:00  INFO 12140 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-23T16:03:10.987+09:00  INFO 12140 --- [gallery] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T16:03:10.987+09:00  INFO 12140 --- [gallery] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-23T16:03:11.067+09:00  INFO 12140 --- [gallery] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T16:03:11.068+09:00  INFO 12140 --- [gallery] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1515 ms
+2025-05-23T16:03:11.260+09:00  INFO 12140 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T16:03:11.406+09:00  INFO 12140 --- [gallery] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@622d7e4
+2025-05-23T16:03:11.409+09:00  INFO 12140 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T16:03:11.452+09:00  INFO 12140 --- [gallery] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T16:03:11.537+09:00  INFO 12140 --- [gallery] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-23T16:03:11.590+09:00  INFO 12140 --- [gallery] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T16:03:12.002+09:00  INFO 12140 --- [gallery] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T16:03:12.123+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@29b8df5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@20890a1a)
+2025-05-23T16:03:12.124+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@70a24f9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@78bad03b)
+2025-05-23T16:03:12.124+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@26101efc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e2109fe)
+2025-05-23T16:03:12.125+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@18dac12f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@36cfe107)
+2025-05-23T16:03:12.125+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@100eeedc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@56266bda)
+2025-05-23T16:03:12.125+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@18bb1b88) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@51b51641)
+2025-05-23T16:03:12.125+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@362a6aa5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@53b7bf01)
+2025-05-23T16:03:12.126+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@139089a4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6a6e9289)
+2025-05-23T16:03:12.126+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@ff4b223) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@61554b6b)
+2025-05-23T16:03:12.134+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-05-23T16:03:12.134+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-05-23T16:03:12.135+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-05-23T16:03:12.138+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T16:03:12.138+09:00 DEBUG 12140 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T16:03:13.317+09:00  INFO 12140 --- [gallery] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T16:03:13.321+09:00  INFO 12140 --- [gallery] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T16:03:13.856+09:00  WARN 12140 --- [gallery] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T16:03:14.293+09:00  INFO 12140 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-23T16:03:14.302+09:00  INFO 12140 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Started GalleryApplication in 5.372 seconds (process running for 6.509)
+2025-05-23T16:05:09.017+09:00  INFO 12140 --- [gallery] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T16:05:09.017+09:00  INFO 12140 --- [gallery] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T16:05:09.019+09:00  INFO 12140 --- [gallery] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-23T16:06:16.606+09:00  INFO 12140 --- [gallery] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T16:06:16.608+09:00  INFO 12140 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T16:06:16.618+09:00  INFO 12140 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T16:06:19.992+09:00  INFO 13744 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Starting GalleryApplication using Java 17.0.14 with PID 13744 (C:\study\gallery\gallery\build\classes\java\main started by a in C:\study\gallery\gallery)
+2025-05-23T16:06:19.995+09:00 DEBUG 13744 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-05-23T16:06:19.996+09:00  INFO 13744 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T16:06:20.785+09:00  INFO 13744 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T16:06:20.897+09:00  INFO 13744 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 5 JPA repository interfaces.
+2025-05-23T16:06:21.588+09:00  INFO 13744 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-23T16:06:21.608+09:00  INFO 13744 --- [gallery] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T16:06:21.608+09:00  INFO 13744 --- [gallery] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-23T16:06:21.679+09:00  INFO 13744 --- [gallery] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T16:06:21.679+09:00  INFO 13744 --- [gallery] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1635 ms
+2025-05-23T16:06:21.852+09:00  INFO 13744 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T16:06:22.005+09:00  INFO 13744 --- [gallery] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ab14636
+2025-05-23T16:06:22.008+09:00  INFO 13744 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T16:06:22.052+09:00  INFO 13744 --- [gallery] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T16:06:22.134+09:00  INFO 13744 --- [gallery] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-23T16:06:22.180+09:00  INFO 13744 --- [gallery] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T16:06:22.607+09:00  INFO 13744 --- [gallery] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T16:06:22.727+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18db3b3c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@318e3942)
+2025-05-23T16:06:22.727+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c4057f9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1ddf42dd)
+2025-05-23T16:06:22.728+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5c1c9881) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c18ee69)
+2025-05-23T16:06:22.728+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2f99d8c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@65d7eea4)
+2025-05-23T16:06:22.728+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5d37aa0f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6076c66)
+2025-05-23T16:06:22.728+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@485c84d7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1224e1b6)
+2025-05-23T16:06:22.728+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@72a3462f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4ffa7041)
+2025-05-23T16:06:22.729+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@632c3f55) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@56b05bd7)
+2025-05-23T16:06:22.729+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3e4afd10) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@22aefae0)
+2025-05-23T16:06:22.731+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-05-23T16:06:22.731+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-05-23T16:06:22.732+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-05-23T16:06:22.735+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T16:06:22.735+09:00 DEBUG 13744 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T16:06:23.795+09:00  INFO 13744 --- [gallery] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T16:06:23.802+09:00  INFO 13744 --- [gallery] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T16:06:24.272+09:00  WARN 13744 --- [gallery] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T16:06:24.681+09:00  INFO 13744 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-23T16:06:24.690+09:00  INFO 13744 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Started GalleryApplication in 5.311 seconds (process running for 6.278)
+2025-05-23T16:06:53.092+09:00  INFO 13744 --- [gallery] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T16:06:53.093+09:00  INFO 13744 --- [gallery] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T16:06:53.094+09:00  INFO 13744 --- [gallery] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-23T16:06:53.344+09:00 DEBUG 13744 --- [gallery] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:07:03.441+09:00 DEBUG 13744 --- [gallery] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:07:09.449+09:00 DEBUG 13744 --- [gallery] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:07:37.509+09:00 DEBUG 13744 --- [gallery] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:07:41.916+09:00 DEBUG 13744 --- [gallery] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:10:13.821+09:00  INFO 13744 --- [gallery] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T16:10:13.824+09:00  INFO 13744 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T16:10:13.834+09:00  INFO 13744 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T16:10:18.614+09:00  INFO 13472 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Starting GalleryApplication using Java 17.0.14 with PID 13472 (C:\study\gallery\gallery\build\classes\java\main started by a in C:\study\gallery\gallery)
+2025-05-23T16:10:18.616+09:00 DEBUG 13472 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-05-23T16:10:18.617+09:00  INFO 13472 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T16:10:19.385+09:00  INFO 13472 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T16:10:19.481+09:00  INFO 13472 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 5 JPA repository interfaces.
+2025-05-23T16:10:20.119+09:00  INFO 13472 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-23T16:10:20.135+09:00  INFO 13472 --- [gallery] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T16:10:20.135+09:00  INFO 13472 --- [gallery] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-23T16:10:20.205+09:00  INFO 13472 --- [gallery] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T16:10:20.205+09:00  INFO 13472 --- [gallery] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1540 ms
+2025-05-23T16:10:20.376+09:00  INFO 13472 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T16:10:20.542+09:00  INFO 13472 --- [gallery] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@324b6a56
+2025-05-23T16:10:20.545+09:00  INFO 13472 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T16:10:20.594+09:00  INFO 13472 --- [gallery] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T16:10:20.680+09:00  INFO 13472 --- [gallery] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-23T16:10:20.731+09:00  INFO 13472 --- [gallery] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T16:10:21.283+09:00  INFO 13472 --- [gallery] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T16:10:21.402+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4db728df) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@b0d3e7)
+2025-05-23T16:10:21.402+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@74bdfa0b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@68a5aadd)
+2025-05-23T16:10:21.402+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c2096c6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1a89414e)
+2025-05-23T16:10:21.403+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@17f8db6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@44492c06)
+2025-05-23T16:10:21.403+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5c4714ef) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@c94bd18)
+2025-05-23T16:10:21.403+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@71fb8301) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7cdfa824)
+2025-05-23T16:10:21.403+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18db3b3c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@318e3942)
+2025-05-23T16:10:21.403+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c4057f9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1ddf42dd)
+2025-05-23T16:10:21.403+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5c1c9881) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1c18ee69)
+2025-05-23T16:10:21.405+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-05-23T16:10:21.405+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-05-23T16:10:21.406+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-05-23T16:10:21.409+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T16:10:21.409+09:00 DEBUG 13472 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T16:10:22.904+09:00  INFO 13472 --- [gallery] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T16:10:22.912+09:00  INFO 13472 --- [gallery] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T16:10:23.448+09:00  WARN 13472 --- [gallery] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T16:10:23.871+09:00  INFO 13472 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-23T16:10:23.880+09:00  INFO 13472 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Started GalleryApplication in 5.884 seconds (process running for 6.745)
+2025-05-23T16:10:51.961+09:00  INFO 13472 --- [gallery] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T16:10:51.964+09:00  INFO 13472 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T16:10:51.982+09:00  INFO 13472 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T16:10:56.638+09:00  INFO 788 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Starting GalleryApplication using Java 17.0.14 with PID 788 (C:\study\gallery\gallery\build\classes\java\main started by a in C:\study\gallery\gallery)
+2025-05-23T16:10:56.641+09:00 DEBUG 788 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-05-23T16:10:56.642+09:00  INFO 788 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T16:10:57.417+09:00  INFO 788 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T16:10:57.526+09:00  INFO 788 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 5 JPA repository interfaces.
+2025-05-23T16:10:58.162+09:00  INFO 788 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-23T16:10:58.178+09:00  INFO 788 --- [gallery] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T16:10:58.178+09:00  INFO 788 --- [gallery] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-23T16:10:58.244+09:00  INFO 788 --- [gallery] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T16:10:58.245+09:00  INFO 788 --- [gallery] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1554 ms
+2025-05-23T16:10:58.407+09:00  INFO 788 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T16:10:58.561+09:00  INFO 788 --- [gallery] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77b5148c
+2025-05-23T16:10:58.564+09:00  INFO 788 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T16:10:58.609+09:00  INFO 788 --- [gallery] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T16:10:58.691+09:00  INFO 788 --- [gallery] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-23T16:10:58.739+09:00  INFO 788 --- [gallery] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T16:10:59.152+09:00  INFO 788 --- [gallery] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T16:10:59.273+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@71fb8301) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7cdfa824)
+2025-05-23T16:10:59.274+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18db3b3c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@318e3942)
+2025-05-23T16:10:59.274+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c4057f9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1ddf42dd)
+2025-05-23T16:10:59.274+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5c1c9881) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1c18ee69)
+2025-05-23T16:10:59.274+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2f99d8c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@65d7eea4)
+2025-05-23T16:10:59.274+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5d37aa0f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6076c66)
+2025-05-23T16:10:59.274+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@485c84d7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1224e1b6)
+2025-05-23T16:10:59.274+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@72a3462f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4ffa7041)
+2025-05-23T16:10:59.275+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@632c3f55) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@56b05bd7)
+2025-05-23T16:10:59.277+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-05-23T16:10:59.277+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-05-23T16:10:59.278+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-05-23T16:10:59.281+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T16:10:59.281+09:00 DEBUG 788 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T16:11:00.443+09:00  INFO 788 --- [gallery] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T16:11:00.449+09:00  INFO 788 --- [gallery] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T16:11:00.977+09:00  WARN 788 --- [gallery] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T16:11:01.429+09:00  INFO 788 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-23T16:11:01.439+09:00  INFO 788 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Started GalleryApplication in 5.44 seconds (process running for 6.258)
+2025-05-23T16:11:08.713+09:00  INFO 788 --- [gallery] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T16:11:08.714+09:00  INFO 788 --- [gallery] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T16:11:08.716+09:00  INFO 788 --- [gallery] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-23T16:11:28.318+09:00 DEBUG 788 --- [gallery] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:11:40.248+09:00 DEBUG 788 --- [gallery] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:17:34.060+09:00  INFO 788 --- [gallery] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T16:17:34.063+09:00  INFO 788 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T16:17:34.075+09:00  INFO 788 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T16:17:39.062+09:00  INFO 22728 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Starting GalleryApplication using Java 17.0.14 with PID 22728 (C:\study\gallery\gallery\build\classes\java\main started by a in C:\study\gallery\gallery)
+2025-05-23T16:17:39.064+09:00 DEBUG 22728 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-05-23T16:17:39.066+09:00  INFO 22728 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T16:17:39.833+09:00  INFO 22728 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T16:17:39.936+09:00  INFO 22728 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 5 JPA repository interfaces.
+2025-05-23T16:17:40.583+09:00  INFO 22728 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-23T16:17:40.598+09:00  INFO 22728 --- [gallery] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T16:17:40.599+09:00  INFO 22728 --- [gallery] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-23T16:17:40.665+09:00  INFO 22728 --- [gallery] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T16:17:40.666+09:00  INFO 22728 --- [gallery] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1542 ms
+2025-05-23T16:17:40.846+09:00  INFO 22728 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T16:17:40.998+09:00  INFO 22728 --- [gallery] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65be88ae
+2025-05-23T16:17:41.001+09:00  INFO 22728 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T16:17:41.045+09:00  INFO 22728 --- [gallery] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T16:17:41.127+09:00  INFO 22728 --- [gallery] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-23T16:17:41.175+09:00  INFO 22728 --- [gallery] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T16:17:41.601+09:00  INFO 22728 --- [gallery] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T16:17:41.722+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2673487b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2d07aacc)
+2025-05-23T16:17:41.723+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@ff5d4f1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@194224ca)
+2025-05-23T16:17:41.723+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@254e9709) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@350f18a6)
+2025-05-23T16:17:41.723+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@147c00aa) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1c90029b)
+2025-05-23T16:17:41.723+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4db728df) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@b0d3e7)
+2025-05-23T16:17:41.723+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@74bdfa0b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@68a5aadd)
+2025-05-23T16:17:41.723+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c2096c6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1a89414e)
+2025-05-23T16:17:41.724+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@17f8db6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@44492c06)
+2025-05-23T16:17:41.724+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5c4714ef) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@c94bd18)
+2025-05-23T16:17:41.726+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-05-23T16:17:41.726+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-05-23T16:17:41.727+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-05-23T16:17:41.731+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T16:17:41.731+09:00 DEBUG 22728 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T16:17:42.803+09:00  INFO 22728 --- [gallery] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T16:17:42.807+09:00  INFO 22728 --- [gallery] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T16:17:43.313+09:00  WARN 22728 --- [gallery] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T16:17:43.712+09:00  INFO 22728 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-23T16:17:43.721+09:00  INFO 22728 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Started GalleryApplication in 5.284 seconds (process running for 6.144)
+2025-05-23T16:17:48.553+09:00  INFO 22728 --- [gallery] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T16:17:48.553+09:00  INFO 22728 --- [gallery] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T16:17:48.555+09:00  INFO 22728 --- [gallery] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-23T16:17:54.872+09:00 DEBUG 22728 --- [gallery] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:24:55.980+09:00 DEBUG 22728 --- [gallery] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:24:58.982+09:00 DEBUG 22728 --- [gallery] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:25:03.960+09:00 DEBUG 22728 --- [gallery] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:25:13.360+09:00 DEBUG 22728 --- [gallery] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:26:23.589+09:00 DEBUG 22728 --- [gallery] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:26:24.516+09:00 DEBUG 22728 --- [gallery] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:33:47.661+09:00 DEBUG 22728 --- [gallery] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        m1_0.id,
+        m1_0.created,
+        m1_0.login_id,
+        m1_0.login_pw,
+        m1_0.name 
+    from
+        members m1_0 
+    where
+        m1_0.login_id=? 
+        and m1_0.login_pw=?
+2025-05-23T16:33:47.697+09:00 DEBUG 22728 --- [gallery] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:34:08.335+09:00  INFO 22728 --- [gallery] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T16:34:08.338+09:00  INFO 22728 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T16:34:08.349+09:00  INFO 22728 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T16:34:13.016+09:00  INFO 9096 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Starting GalleryApplication using Java 17.0.14 with PID 9096 (C:\study\gallery\gallery\build\classes\java\main started by a in C:\study\gallery\gallery)
+2025-05-23T16:34:13.018+09:00 DEBUG 9096 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-05-23T16:34:13.019+09:00  INFO 9096 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T16:34:13.804+09:00  INFO 9096 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T16:34:13.897+09:00  INFO 9096 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 5 JPA repository interfaces.
+2025-05-23T16:34:14.469+09:00  INFO 9096 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-23T16:34:14.484+09:00  INFO 9096 --- [gallery] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T16:34:14.484+09:00  INFO 9096 --- [gallery] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-23T16:34:14.550+09:00  INFO 9096 --- [gallery] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T16:34:14.550+09:00  INFO 9096 --- [gallery] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1483 ms
+2025-05-23T16:34:14.712+09:00  INFO 9096 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T16:34:14.866+09:00  INFO 9096 --- [gallery] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c46c9c3
+2025-05-23T16:34:14.868+09:00  INFO 9096 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T16:34:14.911+09:00  INFO 9096 --- [gallery] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T16:34:14.990+09:00  INFO 9096 --- [gallery] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-23T16:34:15.043+09:00  INFO 9096 --- [gallery] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T16:34:15.457+09:00  INFO 9096 --- [gallery] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T16:34:15.577+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5d37aa0f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6076c66)
+2025-05-23T16:34:15.577+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@485c84d7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1224e1b6)
+2025-05-23T16:34:15.577+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@72a3462f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4ffa7041)
+2025-05-23T16:34:15.577+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@632c3f55) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@56b05bd7)
+2025-05-23T16:34:15.577+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3e4afd10) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@22aefae0)
+2025-05-23T16:34:15.578+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@20faaf77) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7440265c)
+2025-05-23T16:34:15.578+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1d8be7b9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@48277712)
+2025-05-23T16:34:15.578+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3d53e876) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@48d44b46)
+2025-05-23T16:34:15.578+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@aa0dbca) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@794cb26b)
+2025-05-23T16:34:15.580+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-05-23T16:34:15.581+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-05-23T16:34:15.581+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-05-23T16:34:15.584+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T16:34:15.585+09:00 DEBUG 9096 --- [gallery] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-05-23T16:34:16.739+09:00  INFO 9096 --- [gallery] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T16:34:16.744+09:00  INFO 9096 --- [gallery] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T16:34:17.233+09:00  WARN 9096 --- [gallery] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T16:34:17.656+09:00  INFO 9096 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-23T16:34:17.666+09:00  INFO 9096 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Started GalleryApplication in 5.208 seconds (process running for 6.313)
+2025-05-23T16:34:28.518+09:00  INFO 9096 --- [gallery] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T16:34:28.518+09:00  INFO 9096 --- [gallery] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T16:34:28.519+09:00  INFO 9096 --- [gallery] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-23T16:34:28.794+09:00 DEBUG 9096 --- [gallery] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T16:45:13.521+09:00 DEBUG 9096 --- [gallery] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        m1_0.id,
+        m1_0.created,
+        m1_0.login_id,
+        m1_0.login_pw,
+        m1_0.name 
+    from
+        members m1_0 
+    where
+        m1_0.login_id=? 
+        and m1_0.login_pw=?
+2025-05-23T16:45:13.549+09:00 DEBUG 9096 --- [gallery] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.created,
+        i1_0.discount_per,
+        i1_0.img_path,
+        i1_0.name,
+        i1_0.price 
+    from
+        items i1_0
+2025-05-23T17:05:09.560+09:00  INFO 9096 --- [gallery] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T17:05:09.562+09:00  INFO 9096 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T17:05:09.565+09:00  INFO 9096 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -20,6 +20,12 @@ public class ApiInterceptor implements HandlerInterceptor {
                 response.setStatus(401);
                 return false;
             }
+
+            String origin = request.getHeader("Origin");
+            if(origin != null && origin.contains("localhost:5173")) {
+                  response.sendError(HttpServletResponse.SC_FORBIDDEN);
+                  return false;
+            }
         return true;
     }
 }

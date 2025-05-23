@@ -13,6 +13,7 @@ instance.interceptors.response.use((res) => {
         case 400:
             window.alert("잘못된 요청입니다.");
             break;
+
         case  401:
             window.alert("권한이 없습니다.");
             window.location.replace("/");
@@ -26,23 +27,22 @@ instance.interceptors.response.use((res) => {
     return Promise.reject(err);
 });
 
-//Axios 객체의 메서드를 호출해서 HTTP GET,POST,PUT,DELETE 요청 메서드 
+//Axios 객체의 메서드를 호출해서 HTTP GET,POST,PUT,DELETE 요청 메서드
 export default {
     get(url, params) {
-        return instance.get(url, {params});
+
+            return instance.get(url, {params});
     },
     post(url, params) {
-        return instance.post(url, {params});
+        return instance.post(url, params);
     },
     put(url, params) {
-        return instance.put(url, {params});
+        return instance.put(url, params);
     },
-    delete(url, params) {
-        return instance.delete(url, {params});
-    }
-
-
-}
+    delete(url) {
+        return instance.delete(url);
+    },
+};
 
 // (쿠키에 있는) 리프레시 토큰으로 액세스 토큰 요청
 
