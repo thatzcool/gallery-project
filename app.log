@@ -8382,3 +8382,58 @@ Unconditional classes:
 2025-05-23T15:26:37.057+09:00  INFO 7092 --- [gallery] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-05-23T15:26:37.060+09:00  INFO 7092 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-05-23T15:26:37.068+09:00  INFO 7092 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T15:26:41.845+09:00  INFO 13232 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Starting GalleryApplication using Java 17.0.14 with PID 13232 (C:\study\gallery\gallery\build\classes\java\main started by a in C:\study\gallery\gallery)
+2025-05-23T15:26:41.848+09:00  INFO 13232 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T15:26:42.668+09:00  INFO 13232 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T15:26:42.792+09:00  INFO 13232 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 5 JPA repository interfaces.
+2025-05-23T15:26:43.433+09:00  INFO 13232 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-23T15:26:43.453+09:00  INFO 13232 --- [gallery] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T15:26:43.453+09:00  INFO 13232 --- [gallery] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-23T15:26:43.526+09:00  INFO 13232 --- [gallery] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T15:26:43.527+09:00  INFO 13232 --- [gallery] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1629 ms
+2025-05-23T15:26:43.692+09:00  INFO 13232 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T15:26:43.847+09:00  INFO 13232 --- [gallery] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57e5396b
+2025-05-23T15:26:43.850+09:00  INFO 13232 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T15:26:43.892+09:00  INFO 13232 --- [gallery] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T15:26:43.971+09:00  INFO 13232 --- [gallery] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-23T15:26:44.020+09:00  INFO 13232 --- [gallery] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T15:26:44.432+09:00  INFO 13232 --- [gallery] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T15:26:45.852+09:00  INFO 13232 --- [gallery] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T15:26:45.856+09:00  INFO 13232 --- [gallery] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T15:26:46.366+09:00  WARN 13232 --- [gallery] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T15:26:46.776+09:00  INFO 13232 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-23T15:26:46.785+09:00  INFO 13232 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Started GalleryApplication in 5.541 seconds (process running for 6.431)
+2025-05-23T15:27:04.051+09:00  INFO 13232 --- [gallery] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T15:27:04.052+09:00  INFO 13232 --- [gallery] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T15:27:04.054+09:00  INFO 13232 --- [gallery] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-23T15:29:51.437+09:00  INFO 13232 --- [gallery] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T15:29:51.440+09:00  INFO 13232 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T15:29:51.448+09:00  INFO 13232 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-23T15:29:54.958+09:00  INFO 11324 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Starting GalleryApplication using Java 17.0.14 with PID 11324 (C:\study\gallery\gallery\build\classes\java\main started by a in C:\study\gallery\gallery)
+2025-05-23T15:29:54.961+09:00 DEBUG 11324 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-05-23T15:29:54.962+09:00  INFO 11324 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T15:29:55.760+09:00  INFO 11324 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-23T15:29:55.855+09:00  INFO 11324 --- [gallery] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 5 JPA repository interfaces.
+2025-05-23T15:29:56.465+09:00  INFO 11324 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-23T15:29:56.480+09:00  INFO 11324 --- [gallery] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T15:29:56.481+09:00  INFO 11324 --- [gallery] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-23T15:29:56.548+09:00  INFO 11324 --- [gallery] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T15:29:56.548+09:00  INFO 11324 --- [gallery] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1533 ms
+2025-05-23T15:29:56.713+09:00  INFO 11324 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-23T15:29:56.864+09:00  INFO 11324 --- [gallery] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ccd341d
+2025-05-23T15:29:56.866+09:00  INFO 11324 --- [gallery] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-23T15:29:56.910+09:00  INFO 11324 --- [gallery] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-23T15:29:56.990+09:00  INFO 11324 --- [gallery] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-23T15:29:57.042+09:00  INFO 11324 --- [gallery] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-23T15:29:57.463+09:00  INFO 11324 --- [gallery] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-23T15:29:58.632+09:00  INFO 11324 --- [gallery] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-23T15:29:58.636+09:00  INFO 11324 --- [gallery] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T15:29:59.110+09:00  WARN 11324 --- [gallery] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-23T15:29:59.536+09:00  INFO 11324 --- [gallery] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-23T15:29:59.547+09:00  INFO 11324 --- [gallery] [main] com.ssg.gallery.GalleryApplication       : Started GalleryApplication in 5.256 seconds (process running for 6.275)
+2025-05-23T15:30:17.603+09:00  INFO 11324 --- [gallery] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T15:30:17.603+09:00  INFO 11324 --- [gallery] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T15:30:17.604+09:00  INFO 11324 --- [gallery] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-23T15:32:25.088+09:00  INFO 11324 --- [gallery] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-23T15:32:25.090+09:00  INFO 11324 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-23T15:32:25.097+09:00  INFO 11324 --- [gallery] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
