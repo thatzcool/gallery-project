@@ -1,25 +1,24 @@
 package com.ssg.gallery.account.helper;
 
-import com.ssg.gallery.account.dto.AccountJoinRequest;
-import com.ssg.gallery.account.dto.AccountLoginReqeust;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import com.ssg.gallery.account.dto.AccountJoinRequest;
+import com.ssg.gallery.account.dto.AccountLoginRequest;
 
 public interface AccountHelper {
 
-       //회원 가입
-        void join(AccountJoinRequest joinRequest);
+    // 회원가입
+    void join(AccountJoinRequest joinReq);
 
-       //로그인
-        String login(AccountLoginReqeust loginReqeust, HttpServletRequest request , HttpServletResponse response );
+    // 로그인
+    String login(AccountLoginRequest loginReq, HttpServletRequest req, HttpServletResponse res);
 
-       //회원 아이디 조회
-        Integer getMemberId(HttpServletRequest request);
+    // 회원 아이디 조회
+    Integer getMemberId(HttpServletRequest req);
 
-       //로그인 여부 확인
-        boolean isLoggedIn  (HttpServletRequest request);
+    // 로그인 여부 확인
+    boolean isLoggedIn(HttpServletRequest req);
 
-       //로그 아웃
-        void logout(HttpServletRequest request , HttpServletResponse response);
-
+    // 로그아웃
+    void logout(HttpServletRequest req, HttpServletResponse res);
 }

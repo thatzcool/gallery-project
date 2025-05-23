@@ -1,34 +1,31 @@
-package com.ssg.gallery.order.entity;
+package com.ssg.gallery.block.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import org.hibernate.annotations.CreationTimestamp;
+
 import java.time.LocalDateTime;
 
 @Getter
 @Entity
-@Table(name = "order_items")
-public class OrderItem {
+@Table(name = "blocks")
+public class Block {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false)
-    private Integer orderId;
-
-    @Column(nullable = false)
-    private Integer itemId;
+    @Column(length = 250, nullable = false)
+    private String token;
 
     @Column(nullable = false, updatable = false)
     @CreationTimestamp
     private LocalDateTime created;
 
-    public OrderItem() {
+    public Block() {
     }
 
-    public OrderItem(Integer orderId, Integer itemId) {
-        this.orderId = orderId;
-        this.itemId = itemId;
+    public Block(String token) {
+        this.token = token;
     }
 }

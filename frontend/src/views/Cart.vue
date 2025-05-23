@@ -1,5 +1,4 @@
 <script setup>
-
 import {getItems, removeItem} from "@/services/cartService"
 import {reactive} from "vue";
 
@@ -31,7 +30,6 @@ const remove = async (itemId) => {
 (async function onCreated() {
   await load();
 })();
-
 </script>
 
 <template>

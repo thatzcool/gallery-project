@@ -1,7 +1,6 @@
 package com.ssg.gallery.item.service;
 
 import com.ssg.gallery.item.dto.ItemRead;
-
 import java.util.List;
 
 public interface ItemService {

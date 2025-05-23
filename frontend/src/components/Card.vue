@@ -1,13 +1,9 @@
 <script setup>
-import {computed} from "vue";
+import {addItem} from "@/services/cartService";
 import {useRouter} from "vue-router";
-import {useAccountStore} from "@/stores/account.js";
-import {addItem} from "@/services/cartService.js";
+import {computed} from "vue";
+import {useAccountStore} from "@/stores/account";
 
-// 계정 스토어
-const accoutStore = useAccountStore();
-
-// 핵심 컨텐츠가 들어가는 영역, 내부에는 라우터 뷰를 배치한다.
 const props = defineProps({
   item: {
     id: Number,
@@ -18,27 +14,33 @@ const props = defineProps({
   }
 });
 
-
 // 상품 할인가
 const computedItemDiscountPrice = computed(() => {
   return (props.item.price - (props.item.price * props.item.discountPer / 100)).toLocaleString() + '원';
 })
+
 // 라우터 객체
-  const router = useRouter();
+const router = useRouter();
+
 // 계정 스토어
+const accountStore = useAccountStore();
 
-// 장바구니에 상품 담기 :
-  const put = async () => {
+// 장바구니에 상품 담기
+const put = async () => {
+  if (!accountStore.loggedIn) {
+    if (window.confirm("로그인이 필요합니다. 로그인 페이지로 이동하시겠습니까?")) {
+      await router.push("/login");
+    }
 
-     const res = await addItem(props.item.id);
+    return;
+  }
 
-     if(res.status === 200 && window.confirm('장바구니에 상품을 담겼습니다. 장바구니로 이동하시겠습니까?')) {
-          await router.push("/cart");
-     }
+  const res = await addItem(props.item.id);
 
-  };
-
-
+  if (res.status === 200 && window.confirm('장바구니에 상품을 담았습니다. 장바구니로 이동하시겠습니까?')) {
+    await router.push("/cart");
+  }
+};
 </script>
 
 <template>
@@ -54,10 +56,7 @@ const computedItemDiscountPrice = computed(() => {
         <span class="discount badge bg-danger">{{ props.item.discountPer }}%</span>
       </p>
       <div class="d-flex justify-content-between align-items-center">
-        <div v-if="accoutStore.loggedIn">
-          <button class="btn btn-primary btn-sm" @click="put()">장바구니 담기</button>
-        </div>
-
+        <button class="btn btn-primary btn-sm" @click="put()">장바구니 담기</button>
         <!-- 상품 정가(숫자 데이터에 3자리마다 쉼표 표기) -->
         <small class="price text-muted">{{ props.item.price.toLocaleString() }}원</small>
         <!-- 상품 할인가 -->

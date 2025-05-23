@@ -1,11 +1,11 @@
 package com.ssg.gallery.order.entity;
 
-import com.ssg.gallery.order.dto.OrderRead;
 import jakarta.persistence.*;
 import lombok.Getter;
 import org.hibernate.annotations.CreationTimestamp;
-
 import java.time.LocalDateTime;
+
+import com.ssg.gallery.order.dto.OrderRead;
 
 @Getter
 @Entity

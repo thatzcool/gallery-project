@@ -1,11 +1,11 @@
 package com.ssg.gallery.cart.entity;
 
-import com.ssg.gallery.cart.dto.CartRead;
 import jakarta.persistence.*;
 import lombok.Getter;
 import org.hibernate.annotations.CreationTimestamp;
-
 import java.time.LocalDateTime;
+
+import com.ssg.gallery.cart.dto.CartRead;
 
 @Getter
 @Entity

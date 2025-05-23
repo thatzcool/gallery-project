@@ -1,5 +1,4 @@
 package com.ssg.gallery.common.config;
-// 어플리케이션 설정
 
 import com.ssg.gallery.common.interceptor.ApiInterceptor;
 import lombok.RequiredArgsConstructor;
@@ -7,17 +6,16 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-
 @Configuration
 @RequiredArgsConstructor
 public class WebMvcConfig implements WebMvcConfigurer {
 
-        private final ApiInterceptor apiInterceptor;
+    private final ApiInterceptor apiInterceptor;
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(apiInterceptor)
-       .addPathPatterns("/v1/api/**")
-        .excludePathPatterns("/v1/api/account/**","/v1/api/items/**");   // 예외
+                .addPathPatterns("/v1/api/**")
+                .excludePathPatterns("/v1/api/account/**", "/v1/api/items/**"); // 예외
     }
 }

@@ -1,14 +1,33 @@
 <script setup>
-
+import {reactive} from "vue";
+import {getOrder} from "@/services/orderService";
+import {useRoute} from "vue-router";
 
 // 라우트 객체
-
+const route = useRoute();
 
 // 반응형 상태
-
+const state = reactive({
+  order: {
+    id: 0,
+    name: "",
+    address: "",
+    payment: "",
+    amount: 0,
+    created: "",
+    items: [],
+  }
+});
 
 // 커스텀 생성 훅
+(async function onCreated() {
+  const id = route.params.id;
+  const res = await getOrder(id);
 
+  if (res.status === 200) {
+    state.order = res.data;
+  }
+})();
 </script>
 
 <template>
@@ -23,27 +42,27 @@
             <tbody>
             <tr>
               <th>주문 ID</th>
-              <td></td>
+              <td>{{ state.order.id }}</td>
             </tr>
             <tr>
               <th>주문자명</th>
-              <td></td>
+              <td>{{ state.order.name }}</td>
             </tr>
             <tr>
               <th>주소</th>
-              <td></td>
+              <td>{{ state.order.address }}</td>
             </tr>
             <tr>
               <th>결제 금액</th>
-              <td></td>
+              <td>{{ state.order.amount.toLocaleString() }}원</td>
             </tr>
             <tr>
               <th>결제 수단</th>
-              <td></td>
+              <td>{{ state.order.payment === 'card' ? '카드' : '무통장입금(한국은행 123-456789-777)' }}</td>
             </tr>
             <tr>
               <th>결제 일시</th>
-              <td></td>
+              <td>{{ state.order.created.toLocaleString() }}</td>
             </tr>
             </tbody>
           </table>
@@ -60,9 +79,9 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-              <td></td>
-              <td></td>
+            <tr v-for="(item, idx) in state.order.items">
+              <td>{{ idx + 1 }}</td>
+              <td>{{ item.name }}</td>
             </tr>
             </tbody>
             <tfoot>
