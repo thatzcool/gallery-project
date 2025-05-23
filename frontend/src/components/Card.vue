@@ -2,6 +2,7 @@
 import {computed} from "vue";
 import {useRouter} from "vue-router";
 import {useAccountStore} from "@/stores/account.js";
+import {addItem} from "@/services/cartService.js";
 
 // 계정 스토어
 const accoutStore = useAccountStore();
@@ -29,7 +30,7 @@ const computedItemDiscountPrice = computed(() => {
 // 장바구니에 상품 담기 :
   const put = async () => {
 
-     const res = await  addItem(props.item.id);
+     const res = await addItem(props.item.id);
 
      if(res.status === 200 && window.confirm('장바구니에 상품을 담겼습니다. 장바구니로 이동하시겠습니까?')) {
           await router.push("/cart");
